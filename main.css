@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px){
+    .cbalink{
+        display: none !important;
+        opacity: 0 !important;
+    }
+    
+    body > div:nth-of-type(1){
+        display: none !important;
+        opacity: 0 !important;
+    }
+    
+}
+
+
+.title{
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
