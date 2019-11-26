@@ -11,40 +11,102 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="title">
             Колись давно, коли ще й Львова не було, коти заховали тут свої скарби. У різні століття хто тільки не
             пробував їх відшукати: і королівські пірати, і заморські єдинороги, і добрі чарівники, і злі привиди. Не
-            вийшло. Існує легенда, що знайти котячі скарби зможе тільки смщщик Андрій на білому коні. Але для цього йому
+            вийшло. Існує легенда, що знайти котячі скарби зможе тільки смщщик Андрій на білому коні. Але для цього
+            йому
             доведеться виконати три завдання.
         </div>
-        <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
-                aria-expanded="false" aria-controls="collapseExample1">
-                Завдання №1
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample1">
-            <div class="card card-body">
-                <div class="form-group">
-                    <label for="pwd">Щоб розблокувати завдання, введи код:</label>
-                    <div class="row">
-                        <div class="col-12">
-                                <input type="password" class="form-control" id="pwd">
-                        </div>
-                        <div class="col-12">
-                                <div class="btn btn-primary btn-block mt-2">
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Завдання №1
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        У Львові є котяче дерево. Коти садили його перед навколосвітньою, будапештсько-віденською,
+                        поїздочкою. Тоді була страшна злива, але вони для чогось все одно полили своє дерево і з
+                        відчуттям виконаного обов'язку поїхали їсти піцку.
+                        <br> <br>
+                        Сідай на білого коня і їдь до котячого дерева.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Завдання №2
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="pwd">Щоб розблокувати завдання, введи код:</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="password" class="form-control" id="passTask2">
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn btn-primary btn-block mt-2" onclick="openTask2()">
                                         Розблокувати
                                     </div>
+                                </div>
+                            </div>
+                            <div class="task" id="z2">
+                                Давня львівсько-дублянська легенда каже: ніколи не знаєш наперед, куди тебе завезе білий
+                                кінь. Але перед кожною поїздочкою треба закупитися вкусняхами (і молочком).
+                                Коти завжди так роблять. Щоб знайти скарби, треба заїхати до чарівного магазину. Який
+                                магазин чарівний? Той, де крім продуктів, торгують ще пророцтвами.
+                                Сфотографуй передбачення з чеку, відправ в телеграм t.me/asdasdadqwe  - отримай наступну підказку де відшукати ключик
+                            </div>
                         </div>
                     </div>
-                    
-                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Завдання №3
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="pwd">Щоб розблокувати завдання, введи код:</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn btn-primary btn-block mt-2">
+                                        Розблокувати
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
 
 
