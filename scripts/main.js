@@ -3,11 +3,10 @@ function openTask2() {
     let z2 = document.getElementById("z2");
     if (passTask2.value == "" || passTask2.value == " ") {
         alert('Введіть код для розблокування')
-    } else if (passTask2.value == 2022) {
-        alert('Код правильний!');
+    } else if (passTask2.value == 2022 || passTask2.value == "2022" ) {
         z2.style.display = "block"
     } else {
-        alert('Код не правильний :(')
+        alert('Код не правильний :(');
     }
 }
 
@@ -15,14 +14,12 @@ function openTask3() {
     let passTask3 = document.getElementById("passTask3");
     let z3 = document.getElementById("z3");
     if (passTask3.value == "" || passTask3.value == " ") {
-        alert('Введіть код для розблокування')
-    } else if (passTask3.value == "lancer" ||
-        passTask3.value == "Lancer" ||
-        passTask3.value == "LANCER") {
-        alert('Код правильний!');
-        z3.style.display = "block"
+        alert('Введіть код для розблокування');
+    } else if (passTask3.value == "697" ||
+        passTask3.value == 697) {
+        z3.style.display = "block";
     } else {
-        alert('Код не правильний :(')
+        alert('Код не правильний :(');
     }
 }
 
@@ -37,4 +34,8 @@ function openTask4() {
     } else {
         alert('Код не правильний :(')
     }
+}
+
+function video(){
+    document.getElementById('after-video').style.display = "block"
 }

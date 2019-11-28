@@ -7,20 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Поєхавші</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <div class="container">
         <div class="title">
-            Колись давно, коли ще й Львова не було, коти заховали тут свої скарби. У різні століття хто тільки не
-            пробував їх відшукати: і королівські пірати, і заморські єдинороги, і добрі чарівники, і злі привиди. Не
-            вийшло. Існує легенда, що знайти котячі скарби зможе тільки смщщик Андрій на білому коні. Але для цього
-            йому
-            доведеться виконати три завдання.
+            <div class="wow bounceIn" data-wow-duration=".7s">
+                Колись давно, коли ще й Львова не було, коти заховали тут свої скарби. У різні століття хто тільки не
+                пробував їх відшукати: і королівські пірати, і заморські єдинороги, і добрі чарівники, і злі привиди. Не
+                вийшло. Існує легенда, що знайти котячі скарби зможе тільки смщщик Андрій на білому коні. Але для цього
+                йому
+                доведеться виконати три завдання.
+            </div>
+            <a class="custom-link wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"
+                href="#accordionExample">Круто!</a>
         </div>
 
-        <div class="accordion" id="accordionExample">
+        <div class="accordion wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
@@ -54,7 +59,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="passTask2">Щоб розблокувати завдання, введи код:</label>
+                            <label for="passTask2">Щоб розблокувати завдання, введи код (тільки цифри):</label>
                             <div class="row">
                                 <div class="col-12">
                                     <input type="password" class="form-control" id="passTask2">
@@ -65,12 +70,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="task" id="z2">
+                            <div class="task wow bounceIn" data-wow-duration=".8s" id="z2">
                                 Давня львівсько-дублянська легенда каже: ніколи не знаєш наперед, куди тебе завезе білий
                                 кінь. Але перед кожною поїздочкою треба закупитися вкусняхами (і молочком).
                                 Коти завжди так роблять. Щоб знайти скарби, треба заїхати до чарівного магазину. Який
                                 магазин чарівний? Той, де крім продуктів, торгують ще пророцтвами.
-                                Сфотографуй передбачення з чеку, відправ в телеграм t.me/asdasdadqwe  - отримай наступну підказку де відшукати ключик
+                                Сфотографуй передбачення з чеку, відправ в телеграм <a href="https://t.me/JosephZloy">Йозефу</a> - отримай наступну
+                                підказку де відшукати ключик
                             </div>
                         </div>
                     </div>
@@ -88,7 +94,7 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="passTask3">Щоб розблокувати завдання, введи код:</label>
+                            <label for="passTask3">Щоб розблокувати завдання, введи код (тільки цифри):</label>
                             <div class="row">
                                 <div class="col-12">
                                     <input type="password" class="form-control" id="passTask3">
@@ -100,8 +106,40 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="task" id="z3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit soluta quibusdam mollitia, laudantium nisi error exercitationem molestiae commodi harum iste adipisci illo aspernatur sit molestias sequi distinctio quod ullam repellendus!
+                        <div class="task wow bounceIn" data-wow-duration=".4s" id="z3">
+                            Що об'єднує Варшаву, капот, редиску, піцу, Джері Хейл, восьминога, няшну познаньську
+                            квартирку і домік в Жирівці? Терміново дивись котяче відео. І не пропусти підказку.
+
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/BDdMWVcite8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                            <a href="#after-video" class="custom-link" onclick="video()"> Я подивився! </a>
+                            <div id="after-video">
+                                <span>
+                                    Розгадав усі котячі загадки? Тепер сідай на білого коня і їдь у зачароване
+                                    підземелля.
+                                </span>
+                                <br><br>
+                                <span>
+                                    Підказка: <span class="helper">
+                                        (Колись там ховався прекрасний рудий кіт, і щоб виманити його зі сховку,
+                                        Паєхавшим котикам довелося обійти весь сихів).
+                                    </span>
+                                </span>
+                                <br><br>
+                                <span>
+                                    Увага! У місці, де заховані скарби треба поводити себе максимально тихо! Щоб не
+                                    розбудити сусідського дракона. Це у стародавні часи дракони виходили на переговори,
+                                    а
+                                    тепер зразу викличуть поліцію.
+                                    І головне — котячі скарби (подарунки) можна використовувати тільки у законних цілях.
+                                    Інакше — вони самознищаться.
+                                </span>
+                                <br>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -132,7 +170,8 @@
                         </div>
                         <div class="task" id="z4">
                             <a href="https://www.youtube.com/watch?v=aJ5IzGBnWAc" target="_blank">
-                                <img class="z4-img" src="https://cdn.getyourguide.com/img/tour_img-2363350-146.jpg" alt="q">
+                                <img class="z4-img" src="https://cdn.getyourguide.com/img/tour_img-2363350-146.jpg"
+                                    alt="q">
                             </a>
                         </div>
                     </div>
@@ -140,7 +179,6 @@
             </div>
         </div>
     </div>
-
 
 
 
@@ -158,7 +196,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
     </script>
-    <script src="main.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
