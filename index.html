@@ -62,7 +62,7 @@
                             <label for="passTask2">Щоб розблокувати завдання, введи код (тільки цифри):</label>
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="password" class="form-control" id="passTask2">
+                                    <input type="password" placeholder="код" class="form-control" id="passTask2">
                                 </div>
                                 <div class="col-12">
                                     <div class="btn btn-primary btn-block mt-2" onclick="openTask2()">
@@ -75,7 +75,8 @@
                                 кінь. Але перед кожною поїздочкою треба закупитися вкусняхами (і молочком). <br>
                                 Коти завжди так роблять. Щоб знайти скарби, треба заїхати до чарівного магазину. Який
                                 магазин чарівний? Той, де крім продуктів, торгують ще пророцтвами. <br> <br>
-                                Сфотографуй передбачення з чеку, відправ в телеграм <a href="https://t.me/JosephZloy">Йозефу</a> - отримай наступну
+                                Купи котячий напій, сфотографуй передбачення з чеку, відправ в телеграм <a
+                                    href="https://t.me/JosephZloy">Йозефу</a> - і отримаєш наступну
                                 підказку де відшукати ключик
                             </div>
                         </div>
@@ -97,7 +98,7 @@
                             <label for="passTask3">Щоб розблокувати завдання, введи код (тільки цифри):</label>
                             <div class="row">
                                 <div class="col-12">
-                                    <input type="password" class="form-control" id="passTask3">
+                                    <input type="password" placeholder="код" class="form-control" id="passTask3">
                                 </div>
                                 <div class="col-12">
                                     <div class="btn btn-primary btn-block mt-2" onclick="openTask3()">
@@ -108,35 +109,64 @@
                         </div>
                         <div class="task wow bounceIn" data-wow-duration=".4s" id="z3">
                             Що об'єднує Варшаву, капот, редиску, піцу, Джері Хейл, восьминога, няшну познаньську
-                            квартирку і домік в Жирівці? Терміново дивись <a href="https://youtu.be/BDdMWVcite8">котяче відео</a>. І не пропусти підказку.
+                            квартирку і домік в Жирівці? Терміново дивись <a href="https://youtu.be/BDdMWVcite8">котяче
+                                відео</a>. І не пропусти підказку.
 
-                            <a class="video-link" href="https://youtu.be/BDdMWVcite8">
+                            <a class="video-link" target="_blank" href="https://youtu.be/BDdMWVcite8">
                                 <img src="video.jpg" alt="КОТЯЧЕ ВІДЕО">
                             </a>
-
-                            <a href="#after-video" class="custom-link" onclick="video()"> Я подивився! </a>
-                            <div id="after-video">
-                                <span>
-                                    Розгадав усі котячі загадки? Тепер сідай на білого коня і їдь у зачароване
-                                    підземелля.
-                                </span>
-                                <br><br>
-                                <span>
-                                    Підказка: <span class="helper">
-                                        (Колись там ховався прекрасний рудий кіт, і щоб виманити його зі сховку,
-                                        Паєхавшим котикам довелося обійти весь сихів).
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Завдання №4
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="passTask4">Щоб розблокувати завдання, введи секретне слово і код:</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" placeholder="секретне слово" class="form-control" id="wordTask4">
+                                    <input type="password" placeholder="код" class="form-control mt-2" id="passTask4">
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn btn-primary btn-block mt-2" onclick="openTask4()">
+                                        Розблокувати
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task wow bounceIn" data-wow-duration=".8s" id="z4">
+                                <div id="after-video" style="display: block;">
+                                    <span>
+                                        Розгадав усі котячі загадки? Тепер сідай на білого коня і їдь у зачароване
+                                        підземелля.
                                     </span>
-                                </span>
-                                <br><br>
-                                <span>
-                                    Увага! У місці, де заховані скарби треба поводити себе максимально тихо! Щоб не
-                                    розбудити сусідського дракона. Це у стародавні часи дракони виходили на переговори,
-                                    а
-                                    тепер зразу викличуть поліцію. <br><br>
-                                    І головне — котячі скарби (подарунки) можна використовувати тільки у законних цілях.
-                                    Інакше — вони самознищаться.
-                                </span>
-                                <br>
+                                    <br><br>
+                                    <span>
+                                        Підказка: <span class="helper">
+                                            (Колись там ховався прекрасний рудий кіт, і щоб виманити його зі сховку,
+                                            Паєхавшим котикам довелося обійти весь сихів).
+                                        </span>
+                                    </span>
+                                    <br><br>
+                                    <span>
+                                        Увага! У місці, де заховані скарби треба поводити себе максимально тихо! Щоб не
+                                        розбудити сусідського дракона. Це у стародавні часи дракони виходили на переговори,
+                                        а
+                                        тепер зразу викличуть поліцію. <br><br>
+                                        І головне — котячі скарби (подарунки) можна використовувати тільки у законних цілях.
+                                        Інакше — вони самознищаться.
+                                    </span>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                     </div>
