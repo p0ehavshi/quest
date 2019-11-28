@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext');
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
-*, body, html{
+*,
+body,
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: rgb(43, 43, 43);
     background-image: url('../bg.jpg');
     background-size: 180px auto;
 }
 
-.custom-link{
+.custom-link {
     display: block;
     width: 100%;
     background-color: rgba(231, 231, 231, 0.8);
@@ -27,16 +29,19 @@ body{
     border-radius: 10px;
 }
 
-.card, .card-body, .collapse, .accordion{
+.card,
+.card-body,
+.collapse,
+.accordion {
     transition: .4s;
 }
 
-.container{
+.container {
     padding-bottom: 50px;
     width: 100%;
 }
 
-.title{
+.title {
     margin-bottom: 20px;
     margin-top: 30px;
     width: 100%;
@@ -45,10 +50,10 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
-.title div{
+.title div {
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -60,39 +65,40 @@ body{
     background-color: rgba(0, 0, 0, 0.664);
 }
 
-.helper{
-    color: rgb(228, 228, 228);
+.helper {
+    text-shadow: 0 0 22px rgba(0, 0, 0, 0.979);
+    color: transparent;
     transition: .4s;
 }
 
-#after-video{
+#after-video {
     display: none;
 }
 
-.helper:hover{
+.helper:hover {
     color: black;
 }
 
-.accordion{
+.accordion {
     margin-top: 50px;
 }
 
-.task{
+.task {
     margin-top: 20px;
     display: none;
 }
 
-.z4-img{
+.z4-img {
     width: 100%;
 }
 
-iframe{
+iframe {
     margin: 15px 0;
 }
 
 
-@media screen and (max-width: 345px){
-    .title div{
+@media screen and (max-width: 345px) {
+    .title div {
         width: 100%;
         text-align: center;
         font-size: 14px;
@@ -104,18 +110,18 @@ iframe{
         background-color: rgba(0, 0, 0, 0.664);
     }
 
-    .card-body{
+    .card-body {
         font-size: 14px;
     }
 }
 
-@media screen and (min-width: 410px){
-    .title div{
+@media screen and (min-width: 410px) {
+    .title div {
         font-size: 20px;
         line-height: 38px;
     }
 
-    .task{
+    .task {
         line-height: 28px;
     }
 }
