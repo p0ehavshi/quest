@@ -65,6 +65,12 @@ body {
     background-color: rgba(0, 0, 0, 0.664);
 }
 
+.video-link img{
+    width: 100%;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
 .helper {
     text-shadow: 0 0 22px rgba(0, 0, 0, 0.979);
     color: transparent;
