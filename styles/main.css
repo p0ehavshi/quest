@@ -73,7 +73,7 @@ body {
 
 .helper {
     text-shadow: 0 0 22px rgba(0, 0, 0, 0.979);
-    color: transparent;
+    color: rgba(92, 92, 92, 0.05);
     transition: .4s;
 }
 
